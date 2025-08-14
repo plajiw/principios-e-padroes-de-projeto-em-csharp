@@ -1,1 +1,3 @@
-# principios-e-padroes-de-projeto-em-csharp
+# Princípio e Padrões de Projeto em C#
+
+Referência: Ultimate C# Masterclass, Krystyna Ślusarczyk.
