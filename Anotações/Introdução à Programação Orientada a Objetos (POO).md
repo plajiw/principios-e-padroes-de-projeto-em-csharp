@@ -1,4 +1,4 @@
-# Introdução à Programação Orientada a Objetos (POO)
+Introdução à Programação Orientada a Objetos (POO)
 
 ---
 
@@ -1498,4 +1498,231 @@ Console.WriteLine(prod.ExibirDetalhes()); // Saída: Código: P123, Preço Final
 
 ### Referências
 - HackerNoon (2020). *5 Benefits of Immutable Objects Worth Considering for Your Next Project*. [Link](https://hackernoon.com/5-benefits-of-immutable-objects-worth-considering-for-your-next-project-f98e7e85b6ac). Destaca os benefícios de imutabilidade em sistemas modernos.
+
+---
+
+## Propriedades, Getters e Setters em C#
+
+### Introdução às Propriedades
+Em Programação Orientada a Objetos (POO), especialmente em linguagens como C#, as **propriedades** são construções que fornecem um mecanismo controlado para acessar e modificar os dados de uma classe. Elas atuam como uma ponte entre os atributos privados (campos) e o mundo externo, permitindo leituras e gravações de valores de forma segura e encapsulada. Diferentemente de campos públicos diretos, as propriedades permitem adicionar lógica, como validações, sem expor os detalhes internos da implementação.
+
+As propriedades foram introduzidas no C# para simplificar o padrão comum em linguagens como Java, onde se usam métodos explícitos como `getNome()` e `setNome(string nome)` para acessar atributos. No C#, as propriedades combinam a sintaxe simples de um campo com a flexibilidade de métodos, resultando em código mais limpo, legível e moderno.
+
+Ou seja, uma propriedade é um membro de classe que encapsula um ou mais acessores (get e/ou set), permitindo a leitura e/ou escrita de um valor associado a um campo de apoio (backing field). Elas promovem o encapsulamento, um dos pilares da POO, ao controlar o acesso aos dados internos.
+
+### Comparação com Métodos Get/Set em Outras Linguagens
+Em linguagens como Java ou C++, o acesso controlado a atributos é feito por meio de métodos separados:
+- **Getter**: Método que retorna o valor do atributo (e.g., `public string getNome() { return nome; }`).
+- **Setter**: Método que define o valor do atributo, frequentemente com validações (e.g., `public void setNome(string nome) { this.nome = nome; }`).
+
+No C#, as propriedades substituem esses métodos explícitos, unificando a leitura e escrita em uma única construção. Isso reduz a verbosidade e torna o código mais intuitivo, pois as propriedades são usadas como se fossem campos públicos, mas com comportamento de métodos.
+
+**Exemplo Comparativo**:
+- Em Java:
+  ```java
+  private String nome;
+  
+  public String getNome() {
+      return nome;
+  }
+  
+  public void setNome(String nome) {
+      if (nome != null && !nome.isEmpty()) {
+          this.nome = nome;
+      }
+  }
+  ```
+- Em C# (usando propriedades):
+  ```csharp
+  private string _nome;
+  
+  public string Nome {
+      get { return _nome; }
+      set {
+          if (value != null && !string.IsNullOrEmpty(value)) {
+              _nome = value;
+          }
+      }
+  }
+  ```
+
+**Uso em C#**:
+```csharp
+Aluno aluno = new Aluno();
+aluno.Nome = "Maria"; // Chama o setter implicitamente
+Console.WriteLine(aluno.Nome); // Chama o getter implicitamente
+```
+
+### Sintaxe Básica de Propriedades
+Uma propriedade em C# é declarada com um nome, tipo de retorno e acessores `get` e/ou `set`. O acessor `get` é usado para leitura, e o `set` para escrita. O valor passado ao setter é acessado pela palavra-chave reservada `value`, que representa o argumento implícito.
+
+**Exemplo Básico**:
+```csharp
+public class Aluno {
+    private string _nome; // Campo de apoio (backing field)
+
+    public string Nome {
+        get { return _nome; } // Acessor get: retorna o valor
+        set { _nome = value; } // Acessor set: define o valor usando 'value'
+    }
+}
+```
+
+- **get**: Obrigatório para propriedades de leitura. Retorna o valor do campo de apoio ou um valor calculado.
+- **set**: Opcional para propriedades somente leitura. Usa `value` para representar o novo valor a ser atribuído, permitindo validações ou lógica adicional.
+
+### Acessores com Validações e Lógica
+Os acessores permitem adicionar lógica, como validações, tornando as propriedades mais robustas. Isso reforça o encapsulamento, pois o estado interno só é alterado de forma controlada.
+
+**Exemplo com Validação**:
+```csharp
+public class ContaBancaria {
+    private decimal _saldo;
+
+    public decimal Saldo {
+        get { return _saldo; }
+        set {
+            if (value < 0) {
+                throw new ArgumentException("Saldo não pode ser negativo");
+            }
+            _saldo = value;
+        }
+    }
+}
+```
+
+**Análise**:
+- No `set`, `value` é verificado antes da atribuição, evitando estados inválidos.
+- Isso é equivalente a um setter em Java, mas integrado à propriedade.
+
+### Modificadores de Acesso nos Acessores
+Uma vantagem das propriedades é a possibilidade de aplicar modificadores de acesso independentes aos acessores `get` e `set`. Isso permite cenários como propriedades públicas para leitura, mas privadas para escrita (somente modificáveis dentro da classe).
+
+**Exemplos Comuns**:
+- **Get público e set privado**:
+  
+  ```csharp
+  public class Produto {
+      private decimal _preco;
+  
+      public decimal Preco {
+          get { return _preco; }
+          private set { _preco = value; }
+      }
+  
+      public Produto(decimal precoInicial) {
+          _preco = precoInicial; // Pode ser definido no construtor ou métodos internos
+      }
+  }
+  ```
+  - Uso: `Console.WriteLine(produto.Preco); // OK`, mas `produto.Preco = 100; // ERRO fora da classe`.
+  
+- **Get público e set protegido** (para herança):
+  ```csharp
+  public decimal Preco {
+      get { return _preco; }
+      protected set { _preco = value; }
+  }
+  ```
+
+**Benefício**: Oferece flexibilidade maior que campos simples, permitindo controle granular de acesso.
+
+### Campo de Apoio (Backing Field)
+O **campo de apoio** (ou *backing field*) é um atributo privado que armazena o valor real da propriedade. Ele é essencial para propriedades que precisam manter estado.
+
+- **Por quê?**: Permite que os acessores manipulem um valor persistente sem expor o campo diretamente.
+- **Convenção**: Geralmente nomeado com um underscore prefixado (e.g., `_nome` para a propriedade `Nome`).
+- **Exemplo**: No código acima, `_saldo` é o backing field para `Saldo`.
+
+Sem um backing field explícito, o C# gera um internamente em propriedades auto-implementadas.
+
+### Propriedades Auto-Implementadas
+Para propriedades simples sem lógica adicional, o C# permite uma sintaxe abreviada: propriedades auto-implementadas. O compilador cria automaticamente um backing field oculto.
+
+**Sintaxe**:
+```csharp
+public class Pessoa {
+    public string Nome { get; set; } // Backing field gerado automaticamente
+}
+```
+
+- **Equivalente Expandido**:
+  ```csharp
+  private string _nome;
+  public string Nome {
+      get { return _nome; }
+      set { _nome = value; }
+  }
+  ```
+
+**Vantagens**: Reduz boilerplate para propriedades triviais. Ainda permite modificadores de acesso, e.g., `public string Nome { get; private set; }`.
+
+> Boilerplate, em programação, refere-se a trechos de código repetitivos, redundantes ou padronizados que são necessários para realizar tarefas comuns, mas que não agregam diretamente à lógica principal do programa. É como um "modelo" que você copia e cola (ou escreve repetidamente) para configurar algo, como getters/setters, inicializações de classes ou estruturas padrão.
+
+### Propriedades Somente Leitura
+Para propriedades que não devem ser modificadas após a inicialização, omita o `set` ou use inicialização inline. Elas podem ser definidas na declaração ou no construtor.
+
+**Exemplos**:
+- **Somente get**:
+  ```csharp
+  public class Circulo {
+      private readonly double _raio; // Campo readonly para imutabilidade
+  
+      public double Raio { get { return _raio; } } // Propriedade somente leitura
+  
+      public Circulo(double raio) {
+          _raio = raio > 0 ? raio : throw new ArgumentException("Raio inválido");
+      }
+  }
+  ```
+
+- **Inicialização Inline**:
+  
+  ```csharp
+  public class Configuracao {
+      public int Versao { get; } = 1; // Inicializado na declaração, imutável após
+  }
+  ```
+  - Após o construtor, o valor é fixo, semelhante a um campo readonly.
+
+**Uso**: Ideal para valores que devem ser imutáveis após a criação do objeto, promovendo designs seguros e previsíveis.
+
+### Diferenças entre Campos e Propriedades
+Campos e propriedades parecem semelhantes, mas diferem em semântica e funcionalidade:
+
+| **Aspecto**                 | **Campo (Field)**                          | **Propriedade (Property)**               |
+| --------------------------- | ------------------------------------------ | ---------------------------------------- |
+| **Sintaxe**                 | `public int Id;`                           | `public int Id { get; set; }`            |
+| **Acesso**                  | Acesso direto, como uma variável.          | Acesso via get/set, como um método.      |
+| **Modificadores de Acesso** | Um único modificador para leitura/escrita. | Modificadores separados para get e set.  |
+| **Lógica Adicional**        | Não permite validações ou cálculos.        | Permite lógica nos acessores.            |
+| **Polimorfismo**            | Não pode ser sobrescrito em herança.       | Pode ser sobrescrito (virtual/override). |
+| **Uso Recomendado**         | Sempre privado; para estado interno.       | Para expor dados externamente.           |
+
+- **Variable-like vs. Method-like**: Propriedades parecem campos (uso simples como `objeto.Propriedade = valor`), mas comportam-se como métodos (podem ter lógica).
+- **Exemplo de Polimorfismo**:
+  
+  ```csharp
+  public class Base {
+      public virtual string Descricao { get { return "Base"; } }
+  }
+  
+  public class Derivada : Base {
+      public override string Descricao { get { return "Derivada"; } }
+  }
+  ```
+  - Campos não suportam isso, o que pode levar a inconsistências em herança.
+
+### Benefícios e Boas Práticas
+- **Benefícios**:
+  - **Encapsulamento**: Esconde detalhes de implementação e permite mudanças futuras sem quebrar o código externo.
+  - **Validação e Lógica**: Adicione regras de negócio sem expor campos.
+  - **Flexibilidade**: Suporte a herança, interfaces e binding em UI (e.g., WPF).
+  - **Manutenibilidade**: Propriedades facilitam refatorações, como adicionar validações posteriormente.
+- **Boas Práticas**:
+  - Campos devem ser sempre privados ou protegidos; nunca exponha campos públicos.
+  - Use propriedades para qualquer exposição externa de dados.
+  - Prefira propriedades auto-implementadas para simplicidade, expandindo apenas quando necessário.
+  - Em designs imutáveis, use propriedades somente leitura com campos readonly.
+  - Evite lógica pesada nos acessores para manter a performance; para computações complexas, use métodos.
 

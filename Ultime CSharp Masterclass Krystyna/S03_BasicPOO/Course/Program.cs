@@ -3,13 +3,24 @@ Console.ReadKey();
 
 public class Retangulo
 {
-    public readonly int Altura { get; set; }
-    public readonly int Largura { get; set; }
+    const int NumeroDeLados = 4;
+    private int _altura;
+    private int _largura;
 
     public Retangulo(int altura, int largura)
     {
-        Altura = ObterTamanhoOuPadrao(altura, nameof(Altura));
-        Largura = ObterTamanhoOuPadrao(largura, nameof(Largura));
+        _altura = ObterTamanhoOuPadrao(altura, nameof(_altura));
+        _largura = ObterTamanhoOuPadrao(largura, nameof(_largura));
+    }
+
+    public int ObterLargura() => _largura;
+
+    public void DefinirLargura(int valor)
+    {
+        if(valor > 0)
+        {
+            _largura = valor;
+        }
     }
 
     private int ObterTamanhoOuPadrao(int tamanho, string nome)
