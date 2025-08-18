@@ -1726,3 +1726,14 @@ Campos e propriedades parecem semelhantes, mas diferem em semântica e funcional
   - Em designs imutáveis, use propriedades somente leitura com campos readonly.
   - Evite lógica pesada nos acessores para manter a performance; para computações complexas, use métodos.
 
+---
+
+## Inicialização de Objetos e acessor ´init´
+
+o init é uma alternativa ao acessor set, mas se difere na seguinte maneira. Com esse acesso é possível que defina a propriedade na inicialização do objeto, mas não sendo possível altera-la depois
+
+## Propriedades Computadas
+
+## Métodos e Classes estáticas
+
+
