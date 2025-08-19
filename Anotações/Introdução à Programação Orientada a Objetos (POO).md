@@ -1732,8 +1732,54 @@ Campos e propriedades parecem semelhantes, mas diferem em semântica e funcional
 
 o init é uma alternativa ao acessor set, mas se difere na seguinte maneira. Com esse acesso é possível que defina a propriedade na inicialização do objeto, mas não sendo possível altera-la depois
 
+---
+
 ## Propriedades Computadas
+
+---
 
 ## Métodos e Classes estáticas
 
+Há casos onde os métodos de uma classe não possuem diferenças de comportamentos, e não faz sentido instanciar classes para utilizar os mesmos métodos, onde é melhor usar somente o método, mas sem a instância
 
+entender stateful e stateless
+
+um método estático pertence a uma classe, mas não a uma instância específica
+
+São frequentemente usados para utilitários ou funções que não dependem do estado de um objeto, como cálculos matemáticos ou manipulação de strings
+
+Não tem acesso a dados da instância, como valores em campos ou retorno de propriedades
+
+tbm nn podemos passar método estáticos em metodo nao estáticos e vice versa
+
+Quando todos os métodos de uma classe são estáticos, podemos tornar a classe estática, funcionando como um container de métodos, uma classe estática
+- não pode ser instanciada
+- Todos os membros são estáticos
+- Construtor privado
+- Uso direto pelo nome da classe
+
+Para que serve, necessidade e etc
+
+É uma boa prática tornar todos os métodos privados que não usam instância em static, deixando clarro que esses métodos não usam nem alteram nenhum estado do objeto
+
+desempenho maior
+
+todos os campos constantes são implicitamentes estáticos
+
+métodos e campos estáticos
+
+## Campos e propriedades privadas, construtor estático
+
+Por exemplo, ao criar uma lógica onde é necessário que contabilize quantas instancias da classe ocorreram, nn faz sentido usa-lo como nn estático, pois cada instancia não tem conhecimentos de nenhuma outra
+
+gravamos na propria classe
+
+```c#
+    public static int ContadorDeInstancias {get; private set; }
+
+    privata static DateTime _dataPrimeiraInstancia = DateTime.Now;
+```
+
+podemos usar campos estaivos em classe não estaticas?
+
+Compartilhar um atributo entre todas as instancias
