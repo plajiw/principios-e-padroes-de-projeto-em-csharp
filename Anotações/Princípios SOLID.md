@@ -16,3 +16,5 @@ A qualidade se mostra presente quando é necessário realizar alguma alterançã
 
 MNosso oprincipio afirma rque uma classe deve ser responsavel por apenas uma coisa
 Deve haver apenas um motivos para mudar 
+
+exemplo de código, classe que quebre essa resonsabilidade
