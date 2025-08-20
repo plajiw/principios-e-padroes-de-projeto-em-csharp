@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "411123955e785056",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d09cfb7eb30a724",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df29cc53f9c44f38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introdução à Programação Orientada a Objetos (POO)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "295fad3ac755d425",
+    "type": "split",
+    "children": [
+      {
+        "id": "542cce866f7195dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfeadb07eabe3a11",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "f9860a307fa00ef8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "aa64658746db710c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7b67d2c14baf32d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "81518351999ab2d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f9c748bc5301b86",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Introdução à Programação Orientada a Objetos (POO)"
+            }
+          },
+          {
+            "id": "4e4eeb0dd11fa093",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Introdução à Programação Orientada a Objetos (POO)"
+            }
+          },
+          {
+            "id": "3f2894613e74b9ab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2189b2f562de3309",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Introdução à Programação Orientada a Objetos (POO)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "df29cc53f9c44f38",
+  "lastOpenFiles": [
+    "inicio.md.md",
+    "integrarComObsidian.md",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/refint/Course.dll",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/ref/Course.dll",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S02_CSFundamentals/TodoList/obj/Debug/net8.0/refint/TodoList.dll",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S02_CSFundamentals/TodoList/obj/Debug/net8.0/ref/TodoList.dll",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/refint",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/ref",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.sourcelink.json",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.pdb",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.GlobalUsings.g.cs",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.genruntimeconfig.cache",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/README.md",
+    "1_notas/Princípios SOLID.md",
+    "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+    "1_anotes/Introdução à Programação Orientada a Objetos (POO).md",
+    "1_anotes/Princípios SOLID.md",
+    "1_anotacoes/Princípios SOLID.md",
+    "1_anotacoes/Introdução à Programação Orientada a Objetos (POO).md",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/README.md",
+    "Princípios SOLID.md",
+    "Introdução à Programação Orientada a Objetos (POO).md",
+    "Bem-vindo.md",
+    "Anotações/Princípios SOLID.md",
+    "Anotações/Introdução à Programação Orientada a Objetos (POO).md",
+    "Ultime CSharp Masterclass - Krystyna/README.md"
+  ]
+}
