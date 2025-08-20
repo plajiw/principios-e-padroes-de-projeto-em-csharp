@@ -1,12 +1,17 @@
 # Princípio e Padrões de Projeto em C#
 
+![Licença](https://img.shields.io/github/license/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
+![Último Commit](https://img.shields.io/github/last-commit/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
+![Obsidian Vault](https://img.shields.io/badge/Made_with-Obsidian-9b59b6?style=for-the-badge)
+
 Este repositório serve como minha base de conhecimento pessoal, contendo anotações, projetos práticos e materiais de referência sobre POO e padrões de projeto em C#.
 
 O conteúdo é organizado para funcionar como um cofre do Obsidian, mas pode ser acessado como arquivos Markdown normais.
 
 ---
 
-## 🧠 Como Utilizar com o Obsidian
+### Como Utilizar com o Obsidian
 
 A pasta `obsidian/` é um cofre autônomo do [Obsidian](https://obsidian.md/).
 
@@ -14,9 +19,7 @@ Para a melhor experiência, com acesso a links, backlinks e grafos de conhecimen
 
 O ponto de partida principal dentro do cofre é o arquivo `inicio.md`.
 
----
-
-## 📂 Estrutura do Repositório
+### 📂 Estrutura do Repositório
 
 O projeto está organizado da seguinte forma:
 
