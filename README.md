@@ -1,9 +1,14 @@
 # Princípio e Padrões de Projeto em C#
 
-![Licença](https://img.shields.io/github/license/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
-![Último Commit](https://img.shields.io/github/last-commit/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
-![Tamanho do Repositório](https://img.shields.io/github/repo-size/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge)
-![Obsidian Vault](https://img.shields.io/badge/Made_with-Obsidian-9b59b6?style=for-the-badge)
+![Linguagem](https://img.shields.io/badge/Linguagem-C%23-512BD4?style=for-the-badge)
+![Framework](https://img.shields.io/badge/Framework-.NET%208-512BD4?style=for-the-badge)
+
+![Criado com](https://img.shields.io/badge/Criado_com-Obsidian-9b59b6?style=for-the-badge)
+![Licença](https://img.shields.io/github/license/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge&color=333)
+![Último Commit](https://img.shields.io/github/last-commit/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge&color=333)
+![Tamanho](https://img.shields.io/github/repo-size/plajiw/principios-e-padroes-de-projeto-em-csharp?style=for-the-badge&color=333)
+
+[![Perfil Profissional](https://img.shields.io/badge/Contato-LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/pabloribeiroramos/)
 
 Este repositório serve como minha base de conhecimento pessoal, contendo anotações, projetos práticos e materiais de referência sobre POO e padrões de projeto em C#.
 
