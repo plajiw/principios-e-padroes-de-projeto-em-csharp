@@ -11,14 +11,12 @@
             "id": "df29cc53f9c44f38",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
-                "mode": "source",
-                "source": false
+                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Introdução à Programação Orientada a Objetos (POO)"
+              "icon": "lucide-file-text",
+              "title": "Apostila C# e Orietação a Objetos - Alura"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Introdução à Programação Orientada a Objetos (POO)"
+              "title": "Links inversos para Apostila C# e Orietação a Objetos - Alura"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Introdução à Programação Orientada a Objetos (POO)"
+              "title": "Links de saída para Apostila C# e Orietação a Objetos - Alura"
             }
           },
           {
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Introdução à Programação Orientada a Objetos (POO)"
+              "title": "Sumário de Apostila C# e Orietação a Objetos - Alura"
             }
           }
         ]
@@ -171,21 +169,22 @@
   },
   "active": "df29cc53f9c44f38",
   "lastOpenFiles": [
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/GerenciadorAlunos.csproj.FileListAbsolute.txt",
+    "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.pdb",
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/ref/GerenciadorAlunos.dll",
+    "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.dll",
+    "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.runtimeconfig.json",
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/GerenciadorAlunos.genruntimeconfig.cache",
+    "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.deps.json",
+    "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.exe",
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/apphost.exe",
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/GerenciadorAlunos.csproj.BuildWithSkipAnalyzers",
+    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/refint/GerenciadorAlunos.dll",
     "inicio.md.md",
-    "integrarComObsidian.md",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/refint/Course.dll",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/ref/Course.dll",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S02_CSFundamentals/TodoList/obj/Debug/net8.0/refint/TodoList.dll",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S02_CSFundamentals/TodoList/obj/Debug/net8.0/ref/TodoList.dll",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/refint",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/ref",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.sourcelink.json",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.pdb",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.GlobalUsings.g.cs",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/S03_BasicPOO/Course/obj/Debug/net8.0/Course.genruntimeconfig.cache",
-    "2_projetos/Ultime CSharp Masterclass - Krystyna/README.md",
     "1_notas/Princípios SOLID.md",
     "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
+    "integrarComObsidian.md",
+    "2_projetos/Ultime CSharp Masterclass - Krystyna/README.md",
     "1_anotes/Introdução à Programação Orientada a Objetos (POO).md",
     "1_anotes/Princípios SOLID.md",
     "1_anotacoes/Princípios SOLID.md",
