@@ -11,12 +11,14 @@
             "id": "df29cc53f9c44f38",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf"
+                "file": "2_projetos/projeto_1/GerenciadorAlunos/README.md.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Apostila C# e Orietação a Objetos - Alura"
+              "icon": "lucide-file",
+              "title": "README.md"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
+                "file": "2_projetos/projeto_1/GerenciadorAlunos/README.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Apostila C# e Orietação a Objetos - Alura"
+              "title": "Links inversos para README.md"
             }
           },
           {
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
+                "file": "2_projetos/projeto_1/GerenciadorAlunos/README.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Apostila C# e Orietação a Objetos - Alura"
+              "title": "Links de saída para README.md"
             }
           },
           {
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
+                "file": "2_projetos/projeto_1/GerenciadorAlunos/README.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Apostila C# e Orietação a Objetos - Alura"
+              "title": "Sumário de README.md"
             }
           }
         ]
@@ -169,6 +171,8 @@
   },
   "active": "df29cc53f9c44f38",
   "lastOpenFiles": [
+    "3_fontes/Apostila C# e Orietação a Objetos - Alura.pdf",
+    "2_projetos/projeto_1/GerenciadorAlunos/README.md.md",
     "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/GerenciadorAlunos.csproj.FileListAbsolute.txt",
     "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.pdb",
     "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/ref/GerenciadorAlunos.dll",
@@ -179,7 +183,6 @@
     "2_projetos/projeto_1/GerenciadorAlunos/bin/Debug/net8.0/GerenciadorAlunos.exe",
     "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/apphost.exe",
     "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/GerenciadorAlunos.csproj.BuildWithSkipAnalyzers",
-    "2_projetos/projeto_1/GerenciadorAlunos/obj/Debug/net8.0/refint/GerenciadorAlunos.dll",
     "inicio.md.md",
     "1_notas/Princípios SOLID.md",
     "1_notas/Introdução à Programação Orientada a Objetos (POO).md",
